@@ -216,6 +216,17 @@
    </listitem>
   </varlistentry>
 
+  <varlistentry xml:id="memcached.constants.opt-noreply">
+   <term><constant>Memcached::OPT_NOREPLY</constant></term>
+   <listitem>
+    <para>Enable this to specify that you really don’t care about the result from your storage commands 
+    (set, add, replace, append, prepend, delete, increment, decrement, etc.). 
+    This will not wait for a response from the server (there would be no response).
+    Retrieval commands such as get are unaffected by this setting.</para>
+    <para>Type: <literal>boolean</literal>, default: &false;.</para>
+   </listitem>
+  </varlistentry>
+
   <varlistentry xml:id="memcached.constants.opt-tcp-nodelay">
    <term><constant>Memcached::OPT_TCP_NODELAY</constant></term>
    <listitem>
